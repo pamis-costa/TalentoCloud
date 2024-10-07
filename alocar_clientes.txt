@@ -14,7 +14,6 @@ var
    area: caractere
 
 inicio
-   // Solicita as informações ao usuário
    escreva("Quantas pessoas estão no grupo? ")
    leia(numeroPessoas)
 
@@ -24,7 +23,6 @@ inicio
    escreva("Há animais de estimação no grupo? (1 - sim / 2 - não) ")
    leia(opcaoAnimal)
 
-   // Verifica as condições e define a área
    se (opcaoFumante = 1 ou opcaoAnimal = 1) então
       area <- "externa"
    senao se (numeroPessoas >= 5) então
@@ -33,7 +31,6 @@ inicio
       area <- "térreo"
    fimse
 
-   // Exibe a área sugerida
    escreva("A área sugerida para o seu grupo é: ", area)
 
 fimalgoritmo
